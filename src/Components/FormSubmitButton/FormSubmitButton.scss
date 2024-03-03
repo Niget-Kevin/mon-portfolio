@@ -1,0 +1,15 @@
+.button-send {
+margin-top: 10px;
+background-color: #000;
+color: #fff;
+border-color: #fff;
+border-radius: 5px;
+width: 120px;
+font-size: 1em;
+margin-left: 50%;
+transform: translateX(-50%) scale(1);
+}
+
+.button-send:active {
+transform: translateX(-50%) scale(0.9);
+}

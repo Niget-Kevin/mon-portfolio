@@ -1,0 +1,51 @@
+i {
+  padding-right: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+* {
+  color: #fff;
+  font-family: "Montserrat", "arial", sans-serif;
+}
+
+.important {
+  font-weight: bolder;
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.5em;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 1.5em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  background-color: #292828;
+  margin: 0;
+}
+html body main section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+
+
