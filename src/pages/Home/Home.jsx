@@ -20,27 +20,26 @@ function Home() {
                     </p>
                 </div>
             </section>
-            <section id="portfolio">
-                <h2 className="portfolio-title">Mes réalisations</h2>
-                <p className="ocr-legend">
-                <div className='collection'>
-                    {data.map(data => {
-                        return (
-                        <Card
-                            key={data.id} 
-                            id={data.id} 
-                            title={data.title} 
-                            cover={data.cover} 
-                        />
-                        )
-                    })}
-                </div>
-                    {/* inclure les images des projets */} 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ut eaque. Ex deleniti, beatae atque laborum itaque soluta qui distinctio eveniet labore obcaecati alias corporis aspernatur temporibus dolor blanditiis autem!
-                    
-                </p>
-                <div id="portfolio-cards">
-                    {/* Insertion dynamique du portfolio depuis la BDD via l'API */}
+            <section id="portfolio">                
+                <h2 className="portfolio-title">Mes réalisations</h2>                
+                <div >
+                    <div className='collection'>
+                        {data.map(data => {
+                            return (
+                            <Card
+                                key={data.id} 
+                                id={data.id} 
+                                title={data.title} 
+                                img={data.img} 
+                            />
+                            )
+                        })}
+                    </div>
+                    <p className="ocr-legend">
+                        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ut eaque. Ex deleniti, beatae atque laborum itaque soluta qui distinctio eveniet labore obcaecati alias corporis aspernatur temporibus dolor blanditiis autem!
+                        
+                    </p>               
                 </div>
             </section> 
             <Form/>                         

@@ -8,7 +8,7 @@ function Header() {
     return (                   
         <header className="main-nav">
             <div className="header-img header-img-desktop">
-
+                {/* insertion logo ou image  */}
                 <div className="header-img-mousemove"></div>
             </div>
             <span className="header-img-mobile">
