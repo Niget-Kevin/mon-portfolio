@@ -27,8 +27,7 @@ const Achivement = () => {
             </section>
             <section id="portfolio">                
                 <h2 className="portfolio-title"></h2>                
-                <div className='collection'>
-            
+                <div className='collection'>            
                 </div>
                 <p className="ocr-legend">
                     {selectedAchivement.legend}

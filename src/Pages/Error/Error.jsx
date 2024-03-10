@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './Error.scss'
 
 function Error() {
+   
    return (
       <section className='error'>
          <h1 className='error__title'>404</h1>

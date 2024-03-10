@@ -24,7 +24,6 @@ function Home() {
                     </div>            
                 </div>
             </section>
-
             <section id="portfolio">                
                 <h2 className="portfolio-title">Mes réalisations</h2>                
                 <div >
