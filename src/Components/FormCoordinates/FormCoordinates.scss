@@ -1,3 +1,4 @@
+@import '../../style/mixins.scss';
 .coordinates {
 justify-content: space-evenly;
 }
@@ -36,7 +37,7 @@ text-align: center;
 .coordinates, 
 .contact-form-mail {
     display: flex;
-    border: 1px solid #fff;
+    border: 1px solid $color-primary ;
     border-radius: 5px;
     font-size: 1.2em;
     padding-bottom: 20px;
@@ -45,8 +46,8 @@ text-align: center;
 .coordinates textarea, 
 .contact-form-mail input,
 .contact-form-mail textarea {
-color: #222222;
-background-color: #eeeeee;
+color: $color-secondary;
+background-color: $color-primary ;
 padding-left: 10px;
 font-size: 16px;
 border-radius: 5px;
@@ -54,6 +55,6 @@ border-radius: 5px;
 .coordinates input:focus,
 .coordinates textarea:focus,.contact-form-mail input:focus,
 .contact-form-mail textarea:focus {
-background-color: #222222;
-color: #eeeeee;
+background-color: $color-secondary;
+color: $color-primary ;
 }

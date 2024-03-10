@@ -1,10 +1,12 @@
-import React from "react";
+import React from '../Contact/Contact';
+import Contact from "../Contact/Contact";
 import './Footer.scss';
 
 function Footer () {
     return (
         <footer className="footer">
-            <p className="footer-text">lorem*1</p>
+            <Contact/> 
+            <p className="footer-text">© 2024 Tous droits réservés</p>
         </footer>
     )
 }

@@ -1,55 +1,64 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import Logo from '../Logo/logo';
 import './Header.scss';
 
 function Header() {
+
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('header nav');
+        const header = document.querySelector('header');
+        const offset = header.offsetHeight; 
     
-    
-    return (                   
+        if (window.scrollY >= offset) {
+            nav.classList.add('fixed-nav'); 
+        } else {
+            nav.classList.remove('fixed-nav'); 
+        }
+    });
+
+    return (
         <header className="main-nav">
-            <div className="header-img header-img-desktop">
-                {/* insertion logo ou image  */}
-                <div className="header-img-mousemove"></div>
+            <div className="header-container">
+                <Logo/>               
             </div>
-            <span className="header-img-mobile">
-                
-            </span>
+            <span className="header-img-mobile"></span>
             <nav id="navbar">
-                <ul>
+                <ul>                   
                     <li>
-                        <a href="#home">
+                        <Link to="/" className="nav_bottom">
                             <span className="nav-text">Accueil</span>
                             <i className="fa-solid fa-house nav-icon" title="Accueil"></i>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#profile">
+                        <Link to="/profil" className="nav_bottom">
                             <span className="nav-text">Profil</span>
                             <i className="fa-solid fa-circle-user nav-icon" title="Profil"></i>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#skills">
+                        <Link to="/competences" className="nav_bottom">
                             <span className="nav-text">Compétences</span>
                             <i className="fa-solid fa-screwdriver-wrench nav-icon" title="Compétences"></i>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#portfolio">
+                        <Link to="/realisations" className="nav_bottom">
                             <span className="nav-text">Réalisations</span>
                             <i className="fa-solid fa-code nav-icon" title="Réalisations"></i>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#contact">
+                        <Link to="/contact" className="nav_bottom">
                             <span className="nav-text">Contact</span>
                             <i className="fa-solid fa-envelope nav-icon" title="Contact"></i>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
-        </header>        
-    )
+        </header>
+    );
 }
 
 export default Header;

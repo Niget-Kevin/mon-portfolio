@@ -1,35 +1,52 @@
-.footer {
-    display: flex;
-    justify-content: space-between;
+@import '../../style/mixins.scss';
+
+
+.footer {    
+    gap: 50px;
+    justify-content: space-between;    
+    display: grid;
+    justify-content: center;
+    margin-bottom: 50px;
   }
-  footer .footer-copyright {
+  
+  .footer-text {
+    display: grid;
+    justify-content: center;
+  }
+.footer-copyright {
     font-size: 1em;
     padding-left: 42px;
   }
-  footer .footer-copyright .copyright {
+
+.copyright {
     padding-right: 2px;
     position: relative;
     bottom: 2px;
     font-size: 0.8em;
   }
-  footer .footer-copyright .copyright-logo {
+
+.copyright-logo {
     display: none;
   }
-  footer .footer-mail {
+
+.footer-mail {
     font-size: 1em;
     padding-right: 60px;
   }
-  footer .footer-mail a {
+
+.footer-mail a {
     text-decoration: none;
   }
-  footer .footer-mail a .footer-mail-icon {
+
+.footer-mail a .footer-mail-icon {
     display: none;
   }
-  footer .arrow-up {
+
+.arrow-up {
     background-color: rgba(34, 34, 34, 0.6);
     cursor: pointer;
     display: none;
-    border: 1px solid #eeeeee;
+    border: 1px solid $color-primary ;
     border-radius: 50px;
     position: fixed;
     bottom: 8px;
@@ -38,8 +55,9 @@
     -webkit-animation: scrollTopAppear 0.5s ease-in-out;
     animation: scrollTopAppear 0.5s ease-in-out;
   }
-  footer .arrow-up .fa-chevron-up {
-    color: #fff;
+
+.fa-chevron-up {
+    color: $color-primary ;
     font-size: 1em;
     padding: 0;
     padding-top: 0;
