@@ -6,7 +6,7 @@ import Home from './Pages/Home/Home.jsx';
 import Error from './Pages/Error/Error';
 import Achivement from './Pages/Achivement/Achivement';
 import './App.scss';
-import './style/mixins.scss'
+import './Style/mixins.scss'
 
 
 function App() {
